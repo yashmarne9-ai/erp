@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f4f6f9;
+        }
+
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .btn {
+            padding: 8px 12px;
+            border: none;
+            background: #27ae60;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #1e8449;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>Teacher Dashboard</h1>
+</div>
+
+<div class="container">
+
+    <!-- Profile -->
+    <div class="card">
+        <h2>👩‍🏫 Profile</h2>
+        <p><b>Name:</b> Mr. Sharma</p>
+        <p><b>Subject:</b> DBMS</p>
+        <p><b>Department:</b> Computer Science</p>
+    </div>
+
+    <!-- Summary -->
+    <div class="grid">
+
+        <div class="card">
+            <h3>Total Classes</h3>
+            <p>5</p>
+        </div>
+
+        <div class="card">
+            <h3>Total Students</h3>
+            <p>120</p>
+        </div>
+
+        <div class="card">
+            <h3>Assignments</h3>
+            <p>3 Pending</p>
+        </div>
+
+        <div class="card">
+            <h3>Attendance Today</h3>
+            <p>Marked</p>
+        </div>
+
+    </div>
+
+    <!-- Student List -->
+    <div class="card">
+        <h2>👨‍🎓 Student List</h2>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Course</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Yash</td>
+                <td>BSc CS</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Attendance -->
+    <div class="card">
+        <h2>📊 Mark Attendance</h2>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>Yash</td>
+                <td>
+                    <button class="btn">Present</button>
+                    <button class="btn">Absent</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Assignments -->
+    <div class="card">
+        <h2>📚 Assignments</h2>
+        <button class="btn">Create Assignment</button>
+        <p>DBMS Assignment 1 - Due 5 April</p>
+    </div>
+
+    <!-- Timetable -->
+    <div class="card">
+        <h2>🕒 Timetable</h2>
+        <p>Mon - DBMS</p>
+        <p>Tue - DSA</p>
+        <p>Wed - Lab</p>
+    </div>
+
+    <!-- Notices -->
+    <div class="card">
+        <h2>📢 Notices</h2>
+        <button class="btn">Post Notice</button>
+        <p>Internal exams next week</p>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <h2>ERP System</h2>
+    <ul>
+        <li onclick="showSection('dashboard')" class="active">Dashboard</li>
+        <li onclick="showSection('attendance')">Attendance</li>
+        <li onclick="showSection('marks')">Marks</li>
+        <li onclick="showSection('fees')">Fees</li>
+        <li onclick="showSection('profile')">Profile</li>
+        <li onclick="logout()">Logout</li>
+    </ul>
+</div>
+
+<!-- Main -->
+<div class="main">
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h3 id="page-title">Dashboard</h3>
+        <div>Welcome, User</div>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div id="dashboard" class="section">
+        <div class="cards">
+            <div class="card"><h4>Attendance</h4><p>85%</p></div>
+            <div class="card"><h4>Marks</h4><p>78%</p></div>
+            <div class="card"><h4>Fees</h4><p>Pending</p></div>
+        </div>
+    </div>
+
+    <!-- ATTENDANCE -->
+    <div id="attendance" class="section hidden">
+        <h3>Attendance Details</h3>
+        <table>
+            <tr><th>Subject</th><th>Attendance</th></tr>
+            <tr><td>Math</td><td>90%</td></tr>
+            <tr><td>Science</td><td>80%</td></tr>
+        </table>
+    </div>
+
+    <!-- MARKS -->
+    <div id="marks" class="section hidden">
+        <h3>Marks</h3>
+        <table>
+            <tr><th>Subject</th><th>Marks</th></tr>
+            <tr><td>Math</td><td>75</td></tr>
+            <tr><td>Science</td><td>82</td></tr>
+        </table>
+    </div>
+
+    <!-- FEES -->
+    <div id="fees" class="section hidden">
+        <h3>Fees Status</h3>
+        <p>Total: ₹50,000</p>
+        <p>Paid: ₹30,000</p>
+        <p>Pending: ₹20,000</p>
+    </div>
+
+    <!-- PROFILE -->
+    <div id="profile" class="section hidden">
+        <h3>My Profile</h3>
+        <p>Name: Yash</p>
+        <p>Course: BSc CS</p>
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

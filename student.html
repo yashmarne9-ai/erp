@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f4f6f9;
+        }
+
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        .btn {
+            padding: 10px;
+            border: none;
+            background: #3498db;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>Student Dashboard</h1>
+</div>
+
+<div class="container">
+
+    <!-- Profile -->
+    <div class="card">
+        <h2>👤 Profile</h2>
+        <p><b>Name:</b> Yash</p>
+        <p><b>Course:</b> BSc Computer Science</p>
+        <p><b>Year:</b> Second Year</p>
+    </div>
+
+    <div class="grid">
+
+        <!-- Attendance -->
+        <div class="card">
+            <h3>📊 Attendance</h3>
+            <p>Present: 85%</p>
+            
+        </div>
+
+        <!-- Fees -->
+        <div class="card">
+            <h3>💰 Fees</h3>
+            <p>Status: Pending</p>
+            <button class="btn">Pay Now</button>
+        </div>
+
+        <!-- Subjects -->
+        <div class="card">
+            <h3>📚 Subjects</h3>
+            <ul>
+                <li>DBMS</li>
+                <li>Data Structures</li>
+                <li>Web Development</li>
+            </ul>
+        </div>
+
+        <!-- Notices -->
+        <div class="card">
+            <h3>📢 Notices</h3>
+            <p>Exam starts from 10 April</p>
+            <p>Submit assignments before deadline</p>
+        </div>
+
+        <!-- Timetable -->
+        <div class="card">
+            <h3>🕒 Timetable</h3>
+            <p>Mon - DBMS</p>
+            <p>Tue - DSA</p>
+            <p>Wed - Web Dev</p>
+        </div>
+
+        <!-- Result -->
+        <div class="card">
+            <h3>📄 Results</h3>
+            <p>Last Semester: 8.2 CGPA</p>
+            <button class="btn">View Result</button>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
